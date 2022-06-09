@@ -11,3 +11,9 @@ Las librerías de `R 4.2.0` que han sido utilizadas en este curso son:
 * `mice 3.14.0`
 * `VIM 6.1.1`
 * `tidyr 1.2.0`
+* `modeest 2.4.0`
+* `raster 3.5-15`
+* `moments 0.14.1`
+* `caret 6.0-92`
+* `lattice 0.20-45`
+* `beanplot 1.3.1`
