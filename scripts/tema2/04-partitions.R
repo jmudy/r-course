@@ -4,7 +4,7 @@ setwd("~/repos/r-course/scripts/tema2")
 
 library(caret) # Instalar con install.packages('caret')
 
-# Particion de Data Frames con Variables Numericas
+# Partición de Data Frames con Variables Numericas
 
 # Cargar dataset
 data <- read.csv('../../data/tema2/BostonHousing.csv')
@@ -24,7 +24,7 @@ validation_ids_2 <- createDataPartition(temp$MEDV, p = 0.5, list = F)
 data_validation_2 <- temp[validation_ids_2, ]
 data_testing_2 <- temp[-validation_ids_2, ]
 
-# Particion de Data Frames con Variables Categoricas
+# Partición de Data Frames con Variables Categóricas
 
 # Cargar dataset
 data2 <- read.csv('../../data/tema2/boston-housing-classification.csv')
@@ -32,7 +32,7 @@ training_ids_3 <- createDataPartition(data2$MEDV_CAT, p = 0.7, list = F)
 data_training_3 <- data2[training_ids_3, ]
 data_validation_3 <- data2[-training_ids_3, ]
 
-# Crear 2 funciones que lo haga automaticamente
+# Crear 2 funciones que lo haga automáticamente
 
 rda_cb_partition2 <- function(dataframe, target_index, prob){
   library(caret)

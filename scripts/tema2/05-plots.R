@@ -25,18 +25,18 @@ lines(density(mpg))
 
 # Boxplots
 boxplot(mpg,
-        ylab = 'Millas por Galeon')
+        ylab = 'Millas por Galeón')
 
 boxplot(mpg ~ model_year,
-        ylab = 'Millas por Galeon (por año)',
+        ylab = 'Millas por Galeón (por año)',
         xlab = 'Año')
 
 boxplot(mpg ~ cylinders,
-        ylab = 'Consumo por Numero de cilindros')
+        ylab = 'Consumo por Número de cilindros')
 
 # Scatterplot
 # type = 'n' para que lo dibuje todo blanco y a partir
-# de ahi empiezo yo a añadir elementos
+# desde ahí empiezo a añadir elementos
 plot(mpg ~ horsepower, type = 'n')
 linearmodel <- lm(mpg ~ horsepower)
 abline(linearmodel)
@@ -56,14 +56,14 @@ with(subset(auto, cylinders == '3cil'),
 # Matriz de Scatterplots
 pairs(~ mpg + displacement + horsepower + weight)
 
-# Combinacion de plots con par
+# Combinación de plots con par
 old_par <- par()
 
 par(mfrow = c(1, 2)) # una fila 2 columnas de dibujo
 
 with(auto, {
   plot(mpg ~ weight, main = 'Peso vs Consumo')
-  plot(mpg ~ acceleration, main = 'Aceleracion vs Consumo')
+  plot(mpg ~ acceleration, main = 'Aceleración vs Consumo')
 })
 
 par(old_par)

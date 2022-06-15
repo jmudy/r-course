@@ -13,7 +13,7 @@ library(lattice) # Instalar con install.packages('lattice')
 
 ## Diagramas: bwplot, xyplot, densityplot, splom
 
-bwplot(~ auto$mpg | auto$cylinders, # Como auto$mpg esta a la derecha de la ~ estamos indicando el eje X
+bwplot(~ auto$mpg | auto$cylinders, # Como auto$mpg está a la derecha de la ~ estamos indicando el eje X
        main = 'MPG segun cilindrada',
        xlab = 'Millas por Galeon',
        layout = c(2, 3), aspect = 1)
@@ -23,7 +23,7 @@ xyplot(mpg~weight | cylinders, data = auto, # Eje y -> mpg, Eje x -> weight
        xlab = 'Peso (kg)',
        ylab = 'Consumo (mpg)')
 
-trellis.par.set(theme = col.whitebg()) # Para cambiar el tema de los graficos
+trellis.par.set(theme = col.whitebg()) # Para cambiar el tema de los gráficos
 bwplot(~ auto$mpg | auto$cylinders,
        main = 'MPG segun cilindrada',
        xlab = 'Millas por Galeon',

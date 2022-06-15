@@ -17,12 +17,12 @@ data_income_cleaned <- data[!is.na(data$Income), ] # Todas las filas excepto las
 # Filas completas para un dataframe
 complete.cases(data)
 
-# Otra forma de quedarme con las filas donde no hay ningun valor NA, similar a na.omit()
+# Otra forma de quedarme con las filas donde no hay ningún valor NA, similar a na.omit()
 data_cleaned_2 <- data[complete.cases(data), ]
 
 # Convertir los ceros de ingresos en NA
 data$Income[data$Income == 0] <- NA
 
-# Medidas de centralizacion y dispersion
+# Medidas de centralización y dispersión
 mean(data$Income, na.rm = TRUE) # Eliminando los NA para que no de la media = NA
-sd(data$Income, na.rm = TRUE) # Se hace lo mismo para la desviacion tipica
+sd(data$Income, na.rm = TRUE) # Se hace lo mismo para la desviación típica

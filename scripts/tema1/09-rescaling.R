@@ -7,7 +7,7 @@ library(scales) # Instalar con install.packages('scales')
 # Cargar dataset
 students <- read.csv('../../data/tema1/data-conversion.csv')
 
-students$Income_rescaled <- rescale(students$Income) # El valor mas grande 1 el mas pequeño 0
+students$Income_rescaled <- rescale(students$Income) # El valor mas grande 1 el más pequeño 0
 
 (students$Income - min(students$Income))/
   (max(students$Income) - min(students$Income))

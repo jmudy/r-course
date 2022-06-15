@@ -12,17 +12,17 @@ rootnode <- xmlRoot(xmldoc)
 rootnode[1] # Acceder al primer elemento del nodo raiz
 
 cds_data <- xmlSApply(rootnode, function(x) xmlSApply(x, xmlValue))
-cds_catalog <- data.frame(t(cds_data), row.names = NULL) # Hacer transposicion de cds_data
+cds_catalog <- data.frame(t(cds_data), row.names = NULL) # Hacer transposición de cds_data
 head(cds_catalog)
 cds_catalog[1:5, ]
 
-# Funciones xpathSApply() y getNodeSet() para profundizar mas en XML en R
+# Funciones xpathSApply() y getNodeSet() para profundizar más en XML en R
 
 # Tablas HTML
 population_url <- '../../data/tema1/WorldPopulation-wiki.htm'
-tables <- readHTMLTable(population_url) # Devuelve una lista de todas las tablas en la pagina web
+tables <- readHTMLTable(population_url) # Devuelve una lista de todas las tablas en la página web
 most_populated <- tables[[6]]
 head(most_populated)
 
-# Otra forma mas rapida de indicar la tabla que queremos leer
+# Otra forma mas rápida de indicar la tabla que queremos leer
 custom_table <- readHTMLTable(population_url, which = 6)

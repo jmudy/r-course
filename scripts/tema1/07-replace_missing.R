@@ -10,7 +10,7 @@ data$Income_mean <- ifelse(is.na(data$Income),
                            mean(data$Income, na.rm = TRUE),
                            data$Income)
 
-# Aqui, primero vamos a convertir los ceros a NA y despues vamos a sustituir
+# Aquí, primero vamos a convertir los ceros a NA y después vamos a sustituir
 # los valores NA por una muestra aleatoria de dicha columna
 data <- read.csv('../../data/tema1/missing-data.csv', na.strings = '')
 
@@ -24,7 +24,7 @@ rand_impute <- function(x){
   n_missing <- sum(missing)
   # x_obs son los valores conocidos que tienen dato diferente de NA en x
   x_obs <- x[!missing]
-  # Por defecto devolvere lo mismo que habia entrado por parametro
+  # Por defecto devolveré lo mismo que había entrado por parámetro
   imputed <- x
   # En los valores que faltaban los reemplazamos por una muestra de lo que si conocemos (MAS)
   imputed[missing] <- sample(x_obs, n_missing, replace = TRUE)

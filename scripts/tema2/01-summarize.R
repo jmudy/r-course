@@ -21,22 +21,22 @@ str(data$cylinders)
 #install.packages(c('modeest', 'raster', 'moments'))
 library(modeest) # Moda
 library(raster) # Cuantiles, cv
-library(moments) # Asimetria, curtosis
+library(moments) # Asimetría, curtosis
 
 X = data$mpg
 
-#### Medidas de centralizacion
+#### Medidas de centralización
 mean(X) # Media
 median(X) # Mediana
 mfv(X) # Moda
 quantile(X) # Cuantiles
 
-#### Medidas de Dispersion
+#### Medidas de Dispersión
 var(X) # Varianza
-sd(X) # Desviacion tipica
-cv(X) # Coeficiente de variacion (sd(X)/mean(X))*100
+sd(X) # Desviación típica
+cv(X) # Coeficiente de variación (sd(X)/mean(X))*100
 
-#### MEdidas de asimetria
+#### Medidas de asimetría
 skewness(X)
 moments::kurtosis(X)
 

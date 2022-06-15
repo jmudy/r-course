@@ -15,15 +15,15 @@ imputed_data <- mice(housing_data[, names(housing_data) %in% columns],
                      method = 'pmm',
                      seed = 2018)
 
-## pmm - comparacion predictiva de medias
-## logreg - regresion logistica
-## polyreg - regresion logistica politomica
+## pmm - comparación predictiva de medias
+## logreg - regresión logística
+## polyreg - regresión logística politómica
 ## polr - modelo de probabilidades proporcionales
 
 summary(imputed_data)
 
-# Los dos puntos es para indicar que la funcion complete es del paquete mice,
-# ya que en el paquete curl tambien se utiliza y se puede confundir R con que funcion utilizar
+# Los dos puntos es para indicar que la función complete es del paquete mice,
+# ya que en el paquete curl también se utiliza y se puede confundir R con que función utilizar
 complete_data <- mice::complete(imputed_data)
 
 # Sustituir columnas de housing data por las calculadas en complete_data

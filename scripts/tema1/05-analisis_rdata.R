@@ -10,7 +10,7 @@ pedidos <- data.frame(clientes, fechas, pago) # Crear dataframe por columnas
 clientes_vip <- c('Juan Gabriel', 'Ricardo')
 
 save(pedidos, clientes_vip, file = '../../data/tema1/pedidos.Rdata')
-saveRDS(pedidos, file = '../../data/tema1/pedidos.rds') # Guardar en disco una version de un objeto
+saveRDS(pedidos, file = '../../data/tema1/pedidos.rds') # Guardar en disco una versión de un objeto
 
 remove(pedidos) # Para borrar uno o múltiples objetos
 

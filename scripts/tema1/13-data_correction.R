@@ -24,7 +24,7 @@ crime_data_3 <- gather(crime_data,
                        value = 'arrest_estimate',
                        Murder, Assault)
 
-# Operacion inversa de gather()
+# Operación inversa de gather()
 crime_data_4 <- spread(crime_data_2,
                        key = 'crime_type',
                        value = 'arrest_estimate')
@@ -35,7 +35,7 @@ crime_data_5 <- unite(crime_data,
                       Murder, Assault,
                       sep = '_')
 
-# Operacion inversa de unite()
+# Operación inversa de unite()
 crime_data_6 <- separate(crime_data_5,
                          col = 'Murder_Assault',
                          into = c('Murder', 'Assault'),

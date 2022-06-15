@@ -48,7 +48,7 @@ library(beanplot) # Instalar con install.packages('beanplot')
 par(mfrow = c(1, 1))
 beanplot(data$cnt ~ data$season, col = c('blue', 'red', 'yellow'))
 
-# Analisis de causalidad
+# Análisis de causalidad
 library(lattice) # Instalar con install.packages('lattice')
 bwplot(cnt ~ weathersit, data = data,
        layout = c(1, 1),

@@ -8,7 +8,7 @@ housing <- read.csv('../../data/tema1/BostonHousing.csv')
 housing_z <- scale(housing, center = TRUE, scale = TRUE) # Por defecto
 housing_none <- scale(housing, center = FALSE, scale = FALSE) # Se queda igual que el original
 housing_mean <- scale(housing, center = TRUE, scale = FALSE) # Solo resta la media
-housing_sd <- scale(housing, center = FALSE, scale = TRUE) # Solo divido entre la desviacion tipica
+housing_sd <- scale(housing, center = FALSE, scale = TRUE) # Solo divido entre la desviación típica
 
 # sd = sqrt(sum(x^2)/(n-1))
 

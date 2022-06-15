@@ -36,12 +36,12 @@ par(mfrow = c(1, 2))
 boxplot(ozone_data$pressure_height, main = 'Presion con outliers')
 boxplot(imputed_data, main = 'Presion sin outliers')
 
-# Sustituir todo lo que esta por debajo por el cuantil 5 y todo lo que este
+# Sustituir todo lo que está por debajo por el cuantil 5 y todo lo que está
 # por arriba por el cuantil 95
 replace_outliers <- function(x, removeNA = TRUE){
   qrts <- quantile(x, probs = c(0.25, 0.75), na.rm = removeNA)
   caps <- quantile(x, probs = c(0.05, 0.95), na.rm = removeNA)
-  iqr <-qrts[2] - qrts[1] # Calculo de rango intercuartilico
+  iqr <-qrts[2] - qrts[1] # Cálculo de rango intercuartílico
   h <- 1.5 * iqr
   x[x < qrts[1] - h]<- caps[1]
   x[x > qrts[2] + h]<- caps[2]
