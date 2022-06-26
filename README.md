@@ -17,3 +17,11 @@ Las librerías de `R 4.2.0` que han sido utilizadas en este curso son:
 * `caret 6.0-92`
 * `lattice 0.20-45`
 * `beanplot 1.3.1`
+* `ROCR 1.0-11`
+* `rpart 4.1.16`
+* `rpart.plot 3.1.1`
+* `randomForest 4.7-1`
+* `e1071 1.7-9`
+* `class 7.3-20`
+* `nnet 7.3-17`
+* `MASS 7.3-56`
