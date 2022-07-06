@@ -25,3 +25,7 @@ Las librerías de `R 4.2.0` que han sido utilizadas en este curso son:
 * `class 7.3-20`
 * `nnet 7.3-17`
 * `MASS 7.3-56`
+* `FNN 1.1.3.1`
+* `ipred 0.9-12`
+* `gbm 2.1.8`
+* `devtools 2.4.3`
