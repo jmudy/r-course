@@ -29,3 +29,10 @@ Las librerías de `R 4.2.0` que han sido utilizadas en este curso son:
 * `ipred 0.9-12`
 * `gbm 2.1.8`
 * `devtools 2.4.3`
+* `cluster 2.1.3`
+* `OpenImageR 1.2.2`
+* `ClusterR 1.2.6`
+* `fpc 2.2-9`
+* `NbClust 3.0.1`
+* `mclust 5.4.10`
+* `corrplot 0.92`
