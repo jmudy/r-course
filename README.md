@@ -36,3 +36,6 @@ Las librerías de `R 4.2.0` que han sido utilizadas en este curso son:
 * `NbClust 3.0.1`
 * `mclust 5.4.10`
 * `corrplot 0.92`
+* `quantmod 0.4.20`
+* `forecast 8.16`
+
