@@ -38,4 +38,11 @@ Las librerías de `R 4.2.0` que han sido utilizadas en este curso son:
 * `corrplot 0.92`
 * `quantmod 0.4.20`
 * `forecast 8.16`
-
+* `dplyr 1.0.9`
+* `treemap 2.4-3`
+* `reshape 1.4.4`
+* `ggmap 3.0.0`
+* `maps 3.4.0`
+* `igraph 1.3.1`
+* `GGally 2.1.2`
+* `plot3D 1.4`

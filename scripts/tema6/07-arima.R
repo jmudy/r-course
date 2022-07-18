@@ -4,7 +4,7 @@
 # Directorio de trabajo
 setwd("~/repos/r-course/scripts/tema6")
 
-# Cargar datasets
+# Cargar dataset
 inf <- read.csv('../../data/tema6/infy-monthly.csv')
 
 inf_ts <- ts(inf$Adj.Close, start = c(1999, 3), frequency = 12)
