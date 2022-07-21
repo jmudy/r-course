@@ -1,7 +1,7 @@
 
 # No he encontrado ninguna forma de instalar el paquete Rstem
-# El siguiente código corresponde al script que se escribe en el curso
-# Con códigos api y tokens que utilizó el profesor
+# El siguiente código corresponde al script del profesor de curso
+# Con códigos api y tokens
 
 install.packages(c("twitteR", "RColorBrewer", "plyr",
                    "ggplot2", "devtools", "httr"))

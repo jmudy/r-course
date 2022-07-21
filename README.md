@@ -46,3 +46,7 @@ Las librerías de `R 4.2.0` que han sido utilizadas en este curso son:
 * `igraph 1.3.1`
 * `GGally 2.1.2`
 * `plot3D 1.4`
+* `recommenderlab 0.62.0`
+* `lsa 0.73.3`
+* `pROC 1.18.0`
+* `caTools 1.18.2`
