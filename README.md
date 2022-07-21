@@ -50,3 +50,6 @@ Las librerías de `R 4.2.0` que han sido utilizadas en este curso son:
 * `lsa 0.73.3`
 * `pROC 1.18.0`
 * `caTools 1.18.2`
+* `plyr 1.8.7`
+* `dplyr 1.0.9`
+* `data.table 1.14.2`
