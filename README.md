@@ -53,3 +53,5 @@ Las librerías de `R 4.2.0` que han sido utilizadas en este curso son:
 * `plyr 1.8.7`
 * `dplyr 1.0.9`
 * `data.table 1.14.2`
+* `rgdal 1.5-32`
+* `sp 1.5-0`
