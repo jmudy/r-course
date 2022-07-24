@@ -55,3 +55,5 @@ Las librerías de `R 4.2.0` que han sido utilizadas en este curso son:
 * `data.table 1.14.2`
 * `rgdal 1.5-32`
 * `sp 1.5-0`
+* `kableExtra 1.3.4`
+* `webshot 0.5.3`
