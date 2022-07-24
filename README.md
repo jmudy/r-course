@@ -57,3 +57,19 @@ Las librerías de `R 4.2.0` que han sido utilizadas en este curso son:
 * `sp 1.5-0`
 * `kableExtra 1.3.4`
 * `webshot 0.5.3`
+* `Matrix 1.4-1`
+* `twitteR 1.1.9`
+* `rJava 1.0-6`
+* `xlsx 0.6.5`
+* `RODBC 1.3-19`
+* `RMySQL 0.10.23`
+* `RJDBC 0.2-10`
+* `mongolite 2.6.2`
+* `rlang 1.0.4`
+* `SparkR 2.2.1`
+* `sparklyr_1.7.7`
+
+Los siguientes ficheros no se han podido ejecutar debido a que no se han podido instalar ciertas librerías que no están disponibles en `R 4.2.0`:
+
+* [12-sentiment_analysis.R](https://github.com/jmudy/r-course/blob/curso/scripts/tema3/12-sentiment_analysis.R)
+* [05-ml_image_recognition.R](https://github.com/jmudy/r-course/blob/curso/scripts/tema8/05-ml_image_recognition.R)
