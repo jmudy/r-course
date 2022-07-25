@@ -57,8 +57,6 @@ Las librerías de `R 4.2.0` que han sido utilizadas en este curso son:
 * `sp 1.5-0`
 * `kableExtra 1.3.4`
 * `webshot 0.5.3`
-* `Matrix 1.4-1`
-* `twitteR 1.1.9`
 * `rJava 1.0-6`
 * `xlsx 0.6.5`
 * `RODBC 1.3-19`
@@ -73,3 +71,11 @@ Los siguientes ficheros no se han podido ejecutar debido a que no se han podido 
 
 * [12-sentiment_analysis.R](https://github.com/jmudy/r-course/blob/curso/scripts/tema3/12-sentiment_analysis.R)
 * [05-ml_image_recognition.R](https://github.com/jmudy/r-course/blob/curso/scripts/tema8/05-ml_image_recognition.R)
+
+También los siguientes ficheros dado que no se ha podido obtener la API Key de meetup y no ha funcionado la autentificación de mi API Key en Twitter:
+
+* [01-meetup_api.R](https://github.com/jmudy/r-course/blob/curso/scripts/tema9/01-meetup_api.R)
+* [02-graphs.R](https://github.com/jmudy/r-course/blob/curso/scripts/tema9/02-graphs.R)
+* [03-igraphs.R](https://github.com/jmudy/r-course/blob/curso/scripts/tema9/03-igraph.R)
+* [04-network_metrics.R](https://github.com/jmudy/r-course/blob/curso/scripts/tema9/04-network_metrics.R)
+* [05-twitter.R](https://github.com/jmudy/r-course/blob/curso/scripts/tema9/05-twitter.R)
