@@ -1,6 +1,6 @@
 # Repositorio del Curso [Curso completo de Machine Learning: Data Science con RStudio](https://cursos.frogamesformacion.com/courses/machine-learning-r/)
 
-Las librerías de `R 4.2.0` que han sido utilizadas en este curso son:
+Las librerías de `R 4.2.1 Patched` que han sido utilizadas en este curso son:
 
 * `XML 3.99-09`
 * `jsonlite 1.8.0`
@@ -24,7 +24,7 @@ Las librerías de `R 4.2.0` que han sido utilizadas en este curso son:
 * `e1071 1.7-9`
 * `class 7.3-20`
 * `nnet 7.3-17`
-* `MASS 7.3-56`
+* `MASS 7.3-58`
 * `FNN 1.1.3.1`
 * `ipred 0.9-12`
 * `gbm 2.1.8`
@@ -38,15 +38,15 @@ Las librerías de `R 4.2.0` que han sido utilizadas en este curso son:
 * `corrplot 0.92`
 * `quantmod 0.4.20`
 * `forecast 8.16`
-* `dplyr 1.0.9`
 * `treemap 2.4-3`
 * `reshape 1.4.4`
 * `ggmap 3.0.0`
 * `maps 3.4.0`
-* `igraph 1.3.1`
+* `rGoogleMaps 1.4.5.3`
+* `igraph 1.3.4`
 * `GGally 2.1.2`
 * `plot3D 1.4`
-* `recommenderlab 0.62.0`
+* `recommenderlab 1.0.1`
 * `lsa 0.73.3`
 * `pROC 1.18.0`
 * `caTools 1.18.2`
@@ -67,7 +67,7 @@ Las librerías de `R 4.2.0` que han sido utilizadas en este curso son:
 * `SparkR 2.2.1`
 * `sparklyr_1.7.7`
 
-Los siguientes ficheros no se han podido ejecutar debido a que no se han podido instalar ciertas librerías que no están disponibles en `R 4.2.0`:
+Los siguientes ficheros no se han podido ejecutar debido a que no se han podido instalar ciertas librerías que no están disponibles en `R 4.2.1 Patched`:
 
 * [12-sentiment_analysis.R](https://github.com/jmudy/r-course/blob/curso/scripts/tema3/12-sentiment_analysis.R)
 * [05-ml_image_recognition.R](https://github.com/jmudy/r-course/blob/curso/scripts/tema8/05-ml_image_recognition.R)
