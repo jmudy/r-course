@@ -29,7 +29,7 @@ wb <- loadWorkbook("../../data/tema13/auto-wb.xlsx")
 sheets <- getSheets(wb)
 sheet <- sheets[[1]]
 addDataFrame(auto[,10:11], sheet, startColumn = 10, startRow = 3, row.names = F)
-saveWorkbook(wb, "../../../data/tema13/auto-new.xlsx")
+saveWorkbook(wb, "../../data/tema13/auto-new.xlsx")
 
 new_auto <- read.xlsx("../../data/tema13/auto-new.xlsx", sheetIndex = 1)
 head(new_auto)
