@@ -3,8 +3,8 @@
 setwd("~/repos/r-course/scripts/tema13")
 
 install.packages("RODBC") # Instalar con install.packages('RODBC')
-install.packages("RJDBC") # Instalar con install.packages('RODBC')
-install.packages("RMySQL") # Instalar con install.packages('RODBC')
+install.packages("RJDBC") # Instalar con install.packages('RJDBC')
+install.packages("RMySQL") # Instalar con install.packages('RMySQL')
 
 library(RODBC)
 odbcDataSources()
@@ -27,7 +27,6 @@ sqlSave(con, orders, "RecommendationSystem.Orders", append = F)
 df <- sqlQuery(con, "select * from RecommendationSystem.Orders")
 df
 
-
 library(RMySQL)
 con <- dbConnect(MySQL(),
                  dbname = "RecommendationSystem",
@@ -35,7 +34,6 @@ con <- dbConnect(MySQL(),
                  port = 3306, 
                  username = "jb",
                  password = "1234")
-
 
 ac <- dbReadTable(con, "Accomodation")
 head(ac)
@@ -60,7 +58,6 @@ while(!dbHasCompleted(rs)){
 dbClearResult(rs)
 dbDisconnect(con)
 dbListConnections(dbDriver("MySQL"))
-
 
 library(RJDBC)
 driver <- JDBC("com.mysql.jdbc.Driver", 

@@ -64,8 +64,8 @@ Las librerías de `R 4.2.1 Patched` que han sido utilizadas en este curso son:
 * `RJDBC 0.2-10`
 * `mongolite 2.6.2`
 * `rlang 1.0.4`
-* `SparkR 2.2.1`
-* `sparklyr_1.7.7`
+* `SparkR 3.2.2`
+* `sparklyr 1.7.7.9000`
 
 Los siguientes ficheros no se han podido ejecutar debido a que no se han podido instalar ciertas librerías que no están disponibles en `R 4.2.1 Patched`:
 

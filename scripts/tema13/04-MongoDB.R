@@ -4,7 +4,7 @@ setwd("~/repos/r-course/scripts/tema13")
 
 # Descarga del dataset
 # https://www.kaggle.com/datasets/currie32/crimes-in-chicago?resource=download&select=Chicago_Crimes_2012_to_2017.csv
-# Y copiar dentro de la carpeta '../../data/tema13/Chicago_Crimes_2012_to_2017.csv'
+# Y copiar dentro de la carpeta '../../data/tema13/'
 
 library(data.table) # Instalar con install.packages('data.table')
 crimes <- data.table::fread('../../data/tema13/Chicago_Crimes_2012_to_2017.csv')
@@ -34,7 +34,7 @@ mongo.find.all(mongo, ns = 'Chicago.crimes')
 
 crime_collection$count('{"Primary Type" : "ASSAULT"}')
 
-library(dplyr) # Instalar con install.packages('mongolite')
+library(dplyr) # Instalar con install.packages('dplyr')
 crimes <- crime_collection$find('{}', fields = '{"Primary Type" : 1, "Year" : 1}')
 
 crimes %>% group_by(`Primary Type`) %>%

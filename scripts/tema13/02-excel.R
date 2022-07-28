@@ -25,7 +25,6 @@ setCellStyle(cell_1, cs)
 
 saveWorkbook(auto_wb, "../../data/tema13/auto-wb.xlsx")
 
-
 wb <- loadWorkbook("../../data/tema13/auto-wb.xlsx")
 sheets <- getSheets(wb)
 sheet <- sheets[[1]]
