@@ -6,8 +6,8 @@ library(RODBC) # Instalar con install.packages('RODBC')
 odbcDataSources()
 
 con <- odbcConnect("MySQL",
-                   uid = "jmudy",
-                   pwd = "v@lencia92")
+                   uid = "XXXX", # Usuario de MySQL
+                   pwd = "XXXX") # Contraseña de MySQL
 
 custData <- sqlQuery(con, "select rating from RecommendationSystem.Rating limit 5;")
 custData
@@ -27,8 +27,8 @@ con <- dbConnect(MySQL(),
                  dbname = "RecommendationSystem",
                  host = "127.0.0.1", 
                  port = 3306, 
-                 username = "jmudy",
-                 password = "v@lencia92")
+                 username = "XXXX", # Usuario de MySQL
+                 password = "XXXX") # Contraseña de MySQL
 
 ac <- dbReadTable(con, "Accomodation")
 head(ac)
@@ -57,10 +57,10 @@ dbListConnections(dbDriver("MySQL"))
 library(RJDBC) # Instalar con install.packages('RJDBC')
 # Descargar https://downloads.mysql.com/archives/get/p/3/file/mysql-connector-java-8.0.29.tar.gz
 # Y copiarlo en en carpeta lib/
-driver <- JDBC("com.mysql.jdbc.Driver", 
+driver <- JDBC("com.mysql.cj.jdbc.Driver", 
                classPath = "lib/mysql-connector-java-8.0.29/mysql-connector-java-8.0.29.jar", "'")
 con <- dbConnect(driver, "jdbc:mysql://127.0.0.1:3306/RecommendationSystem", 
-                 "jb", "1234", useSSL = F)
+                 "XXXX", "XXXX", useSSL = F) # Usuario y contraseña de MySQL
 
 dbReadTable(con, 'Accomodation')
 
