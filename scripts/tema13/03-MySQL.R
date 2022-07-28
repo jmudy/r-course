@@ -40,7 +40,6 @@ dbWriteTable(con, "Orders", orders, row.names = F)
 
 dbReadTable(con, "Orders")
 
-
 rs <- dbSendQuery(con, paste("SELECT a.location, max(a.price)",
                              "FROM Accomodation a ", 
                              "GROUP BY a.location ",
@@ -55,8 +54,7 @@ dbDisconnect(con)
 dbListConnections(dbDriver("MySQL"))
 
 library(RJDBC) # Instalar con install.packages('RJDBC')
-# Descargar https://downloads.mysql.com/archives/get/p/3/file/mysql-connector-java-8.0.29.tar.gz
-# Y copiarlo en en carpeta lib/
+
 driver <- JDBC("com.mysql.cj.jdbc.Driver", 
                classPath = "lib/mysql-connector-java-8.0.29/mysql-connector-java-8.0.29.jar", "'")
 con <- dbConnect(driver, "jdbc:mysql://127.0.0.1:3306/RecommendationSystem", 
